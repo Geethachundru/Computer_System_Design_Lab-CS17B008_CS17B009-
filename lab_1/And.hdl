@@ -14,3 +14,10 @@ CHIP And {
     Or 	(a=nota, b=notb, out=res);
     Not (in=res, out=out);
 }
+
+/**
+ * optimized
+ * PARTS:
+ * Nand(a=a,     b=b,  out=nand);
+ * Not(in=nand,        out=out);
+ */
